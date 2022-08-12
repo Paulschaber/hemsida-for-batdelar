@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+}
+
+header{
+    background-color: aliceblue;
+    height: 5vw;
+}
+
+.header >{
+    margin-right: 4vw;
+    margin-left: 4vw;
+}
