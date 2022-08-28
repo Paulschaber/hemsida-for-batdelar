@@ -1,13 +1,55 @@
-*{
+* {
+    margin: 0;
+       font-size: 3vw;  
+}
+
+
+:root {
+    --headerheigt: 7vw;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+a:hover{
+    opacity: 60%;
+}
+
+a:active{
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+}
+
+header {
+    background-color: aliceblue;
+    height: var(--headerheigt);
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
+img.header {
+    height: var(--headerheigt);
     margin: 0;
 }
 
-header{
-    background-color: aliceblue;
-    height: 5vw;
-}
-
-.header >{
+.headerL {
+    float: left;
     margin-right: 4vw;
     margin-left: 4vw;
+}
+
+.headerR {
+    float: right;
+    padding: 2vw;
+}
+
+p.header + a {
+    margin-left: auto;
 }
