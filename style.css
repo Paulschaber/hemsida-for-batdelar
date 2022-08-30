@@ -1,11 +1,13 @@
 * {
     margin: 0;
-       font-size: 3vw;  
+       font-size: var(--05hehi);
 }
 
 
 :root {
-    --headerheigt: 7vw;
+    --headerheigt: 5vw;
+    --05hehi: 2.5vw;
+    --025hehi: 1.25vw;
 }
 
 a {
@@ -47,9 +49,27 @@ img.header {
 
 .headerR {
     float: right;
-    padding: 2vw;
+    padding:var(--025hehi);
 }
 
 p.header + a {
     margin-left: auto;
+}
+
+#butik{
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+}
+
+#index{
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+}
+
+#om_oss{
+    background-color: black;
+    color: white;
+    font-weight: bolder;
 }
