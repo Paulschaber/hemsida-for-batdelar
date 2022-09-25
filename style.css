@@ -3,11 +3,22 @@
        font-size: var(--05hehi);
 }
 
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url("assets/fonts/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQUwaEQbjB_mQ.woff") format('woff');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
 
 :root {
     --headerheigt: 5vw;
     --05hehi: 2.5vw;
     --025hehi: 1.25vw;
+    --frstlnkhght: 5.7142857143vw;
 }
 
 a {
@@ -27,9 +38,28 @@ a:active{
     font-weight: bolder;
 }
 
+p a{
+    padding: 0 2vw;
+    border-bottom-width:0.2vw;
+    border-color: rgba(14, 3, 3, 0.98);
+}
+
+#har{
+    height: var(--frstlnkhght);
+    align-content: center;
+    justify-content: center;
+}
+
+#har p{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 header {
     background-color: aliceblue;
     height: var(--headerheigt);
+    box-shadow: 0 1vw 1vw rgba(31,31,31,0.76);
+    z-index: 3;
 }
 
 h1 {
@@ -72,4 +102,63 @@ p.header + a {
     background-color: black;
     color: white;
     font-weight: bolder;
+}
+
+#topbckgrnd{
+    background-image: url("assets/12_upper_deck_298_en_model-layout-image-2021-ryck-280-main-deck-layout-standard-210602_-8389774672031506731.png");
+    width: 100vw;
+    height: 20vw;
+    background-size: cover;
+    background-position:center;
+    z-index: 0;
+    opacity: 60%;
+}
+
+#bildspel{
+    height: 40vw;
+    display: flex;
+}
+
+.bildspel{
+    margin:auto;
+    display: none;
+}
+
+.bildspel img {
+    height: 40vw;
+    margin: auto;
+    display: block;
+}
+
+.tillbaka, .nasta{
+    font-weight: bold;
+    font-size: 2vw;
+    padding: 2vw;
+    user-select: none;
+    border-radius: 0 1vw 1vw 0;
+    position: absolute;
+    align-self: center;
+}
+
+.nasta{
+    right: 0;
+    border-radius:1vw 0 0 1vw;
+}
+
+.indpunkter{
+    text-align: center;
+}
+
+.punkt{
+    height: 1.5vw;
+    width: 1.5vw;
+    margin: 0 0.25vw;
+    border-radius: 50%;
+    background-color: rgba(100, 100, 100, 0.85);
+    transition: background-color 0.6s ease;
+    display: inline-block;
+}
+
+.punkt:hover, .active{
+    background-color: rgba(69, 69, 69, 0.9);
 }

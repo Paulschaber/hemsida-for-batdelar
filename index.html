@@ -2,22 +2,70 @@
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D båtdelar</title>
     <link rel="stylesheet" type="text/css" href="grid.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="flex.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+
+<div id="har">
+    <p>3D printning av båttillbehör vid efterfrågan <a href="butik.html">Här</a></p>
+</div>
+
 <header>
     <img class="header headerL" src="assets/D_5.png" alt="Logotyp">
     <p class="header headerL ">3D Boatparts</p>
-    <a id="index" class="header headerR " href="index.html">Startsida</a>
-    <a class="header headerR" href="butik.html">Köp</a>
+    <a id="index" class="header headerR " href="index.html">Hem</a>
+    <a class="header headerR" href="butik.html">Kontakt</a>
     <a class="header headerR" href="om_oss.html">Om oss</a>
 </header>
+
+<div id="topbckgrnd">
+
+</div>
+
+<div id="bildspel">
+    <div class="bildspel">
+        <img src="assets/3d-printing.webp" alt="Bild av 3D skrivare">
+    </div>
+
+    <div class="bildspel">
+        <img src="assets/istockphoto-1339305459-170667a.jpg" alt="Bild av 3D skrivare">
+    </div>
+
+    <div class="bildspel">
+        <img src="assets/l-intro-1624981856.jpg" alt="Bild av 3D skrivare">
+    </div>
+
+    <div class="bildspel">
+        <img src="assets/maxresdefault.jpg" alt="Bild av 3D skrivare">
+    </div>
+
+    <div class="bildspel">
+        <img src="assets/to-3d-print-or-not-to-3d-print-software-identifies-parts-for-am-1555389944.jpg" alt="Bild av 3d printade delar">
+    </div>
+
+    <div class="bildspel">
+        <img src="assets/which-3d-models-cannot-be-3d-printed-.jpg" alt="Bild av 3D skrivare">
+    </div>
+
+    <a class="tillbaka" onclick="visaBildPlus(-1)">&#10094;</a>
+    <a class="nasta" onclick="visaBildPlus(1)">&#10095;</a>
+
+</div>
+
+<div class="indpunkter">
+    <span class="punkt" onclick="aktuellBild(1)"></span>
+    <span class="punkt" onclick="aktuellBild(2)"></span>
+    <span class="punkt" onclick="aktuellBild(3)"></span>
+    <span class="punkt" onclick="aktuellBild(4)"></span>
+    <span class="punkt" onclick="aktuellBild(5)"></span>
+    <span class="punkt" onclick="aktuellBild(6)"></span>
+</div>
+
+
+<script src="script.js"></script>
 </body>
 </html>
