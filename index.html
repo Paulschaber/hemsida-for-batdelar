@@ -1,71 +1,97 @@
 <!DOCTYPE html>
-<html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D båtdelar</title>
-    <link rel="stylesheet" type="text/css" href="grid.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="flex.css">
-</head>
-<body>
+    <html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>3D båtdelar</title>
+        <link rel="stylesheet" type="text/css" href="grid.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="flex.css">
+    </head>
+    <body>
 
-<div id="har">
-    <p>3D printning av båttillbehör vid efterfrågan <a href="butik.html">Här</a></p>
-</div>
+        <div id="har">
+            <p>3D printning av båttillbehör vid efterfrågan <a href="butik.html">Här</a></p>
+        </div>
 
-<header>
-    <img class="header headerL" src="assets/D_5.png" alt="Logotyp">
-    <p class="header headerL ">3D Boatparts</p>
-    <a id="index" class="header headerR " href="index.html">Hem</a>
-    <a class="header headerR" href="butik.html">Kontakt</a>
-    <a class="header headerR" href="om_oss.html">Om oss</a>
-</header>
+        <header>
+            <img class="header headerL" src="assets/D_5.png" alt="Logotyp">
+            <p class="header headerL ">3D Boatparts</p>
+            <a id="index" class="header headerR " href="index.html">Hem</a>
+            <a class="header headerR" href="butik.html">Kontakt</a>
+            <a class="header headerR" href="om_oss.html">Om oss</a>
+        </header>
 
-<div id="topbckgrnd">
+        <div id="topbckgrnd">
 
-</div>
+        </div>
 
-<div id="bildspel">
-    <div class="bildspel">
-        <img src="assets/3d-printing.webp" alt="Bild av 3D skrivare">
-    </div>
+        <div id="bildspel">
+            <div class="bildspel">
+                <img src="assets/3d-printing.webp" alt="Bild av 3D skrivare">
+            </div>
 
-    <div class="bildspel">
-        <img src="assets/istockphoto-1339305459-170667a.jpg" alt="Bild av 3D skrivare">
-    </div>
+            <div class="bildspel">
+                <img src="assets/istockphoto-1339305459-170667a.jpg" alt="Bild av 3D skrivare">
+            </div>
 
-    <div class="bildspel">
-        <img src="assets/l-intro-1624981856.jpg" alt="Bild av 3D skrivare">
-    </div>
+            <div class="bildspel">
+                <img src="assets/l-intro-1624981856.jpg" alt="Bild av 3D skrivare">
+            </div>
 
-    <div class="bildspel">
-        <img src="assets/maxresdefault.jpg" alt="Bild av 3D skrivare">
-    </div>
+            <div class="bildspel">
+                <img src="assets/maxresdefault.jpg" alt="Bild av 3D skrivare">
+            </div>
 
-    <div class="bildspel">
-        <img src="assets/to-3d-print-or-not-to-3d-print-software-identifies-parts-for-am-1555389944.jpg" alt="Bild av 3d printade delar">
-    </div>
+            <div class="bildspel">
+                <img src="assets/to-3d-print-or-not-to-3d-print-software-identifies-parts-for-am-1555389944.jpg" alt="Bild av 3d printade delar">
+            </div>
 
-    <div class="bildspel">
-        <img src="assets/which-3d-models-cannot-be-3d-printed-.jpg" alt="Bild av 3D skrivare">
-    </div>
+            <div class="bildspel">
+                <img src="assets/which-3d-models-cannot-be-3d-printed-.jpg" alt="Bild av 3D skrivare">
+            </div>
 
-    <a class="tillbaka" onclick="visaBildPlus(-1)">&#10094;</a>
-    <a class="nasta" onclick="visaBildPlus(1)">&#10095;</a>
+            <a class="tillbaka" onclick="visaBildPlus(-1)">&#10094;</a>
+            <a class="nasta" onclick="visaBildPlus(1)">&#10095;</a>
 
-</div>
+        </div>
 
-<div class="indpunkter">
-    <span class="punkt" onclick="aktuellBild(1)"></span>
-    <span class="punkt" onclick="aktuellBild(2)"></span>
-    <span class="punkt" onclick="aktuellBild(3)"></span>
-    <span class="punkt" onclick="aktuellBild(4)"></span>
-    <span class="punkt" onclick="aktuellBild(5)"></span>
-    <span class="punkt" onclick="aktuellBild(6)"></span>
-</div>
+        <div class="indpunkter">
+            <span class="punkt" onclick="aktuellBild(1)"></span>
+            <span class="punkt" onclick="aktuellBild(2)"></span>
+            <span class="punkt" onclick="aktuellBild(3)"></span>
+            <span class="punkt" onclick="aktuellBild(4)"></span>
+            <span class="punkt" onclick="aktuellBild(5)"></span>
+            <span class="punkt" onclick="aktuellBild(6)"></span>
+        </div>
 
+        <div id="underrubrik">
+            <img src="assets/bakgrundunderrubrik.jpeg" alt="fritidsbåt på havet">
+            <p> 3D utskrift av Båtreservdelar både för äldre och nyare fritidsbåtar!
+            </p>
+        </div>
 
-<script src="script.js"></script>
-</body>
+        <div id="brödtext">
+            <img src="" alt="exempelbild av 3d modeller">
+            <h3>
+                Effektiv 3D utskriftslösningar för din fritidsbåt
+            </h3>
+            <p>
+                Genom 3D printning kan vi reproducera överensstämmande plastbeslag och båttillbehör för att kunna ersätta trasiga eller slitna delar i fritidsbåtar, därav kan vi bevara den funktionsdugliga anordningen i båten utan att behöva bygga om eller ersätta konstruktionen.
+                <br><br>
+                Även tillåter 3D utskrift oss att designa fritt hur vi vill att slutprodukten ska se ut, som ger kunden oändliga möjligheter att formge sin reservdel till det mest optimala för sin båt.
+                <br><br>
+                Vi på 3D Båtdelar vill kunna bidra till fritidsbåtsägare genom att framställa båtreservdelar effektivt och lätt tillgängliga för konkurrensaktiga priser inom den marina branschen.
+            </p>
+        </div>
+
+        <footer>
+            <p>batdelarinfo@gmail.com</p>
+            <a class="sociLink" href=""><img src="" alt=""></a>
+            <a class="sociLink" href=""><img src="" alt=""></a>
+
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
 </html>

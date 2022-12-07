@@ -7,3 +7,9 @@ header{
 #har{
     display: flex;
 }
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+

@@ -1,0 +1,26 @@
+#bildspel{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+#underrubrik{
+    display:grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#underrubrik > p{
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#underrubrik > img{    
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#brödtext{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

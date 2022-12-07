@@ -1,6 +1,11 @@
 * {
     margin: 0;
-       font-size: var(--05hehi);
+    font-size: var(--05hehi);
+}
+
+html{
+    background: rgb(239, 239, 239);
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* latin-ext */
@@ -15,16 +20,19 @@
 }
 
 :root {
-    --headerheigt: 5vw;
-    --05hehi: 2.5vw;
-    --025hehi: 1.25vw;
+    --headerheigt: 4vw;
+    --05hehi: 2vw;
+    --025hehi: 1vw;
     --frstlnkhght: 5.7142857143vw;
+}
+
+.gömd{
+    opacity: 0 !important;
 }
 
 a {
     text-decoration: none;
     color: black;
-    font-family: 'Open Sans', sans-serif;
 
 }
 
@@ -105,9 +113,10 @@ p.header + a {
 }
 
 #topbckgrnd{
+    background-color: white;
     background-image: url("assets/12_upper_deck_298_en_model-layout-image-2021-ryck-280-main-deck-layout-standard-210602_-8389774672031506731.png");
     width: 100vw;
-    height: 20vw;
+    height: 16vw;
     background-size: cover;
     background-position:center;
     z-index: 0;
@@ -120,14 +129,19 @@ p.header + a {
 }
 
 .bildspel{
-    margin:auto;
-    display: none;
+    transition: opacity 2s;
+    position: absolute;
+
+
 }
 
 .bildspel img {
-    height: 40vw;
-    margin: auto;
+    height: 35vw;
     display: block;
+    width: 50vw;
+    overflow: hidden;
+    margin-left: 25vw;
+    margin-top: 2vw;
 }
 
 .tillbaka, .nasta{
@@ -150,9 +164,9 @@ p.header + a {
 }
 
 .punkt{
-    height: 1.5vw;
-    width: 1.5vw;
-    margin: 0 0.25vw;
+    height: 1.2vw;
+    width: 1.2vw;
+    margin: 0.5vw 0.25vw;
     border-radius: 50%;
     background-color: rgba(100, 100, 100, 0.85);
     transition: background-color 0.6s ease;
@@ -161,4 +175,44 @@ p.header + a {
 
 .punkt:hover, .active{
     background-color: rgba(69, 69, 69, 0.9);
+}
+
+#underrubrik > img{
+    height: 16vw;
+    width: 100vw;
+    overflow: hidden;
+    object-fit: cover;
+    opacity: 70%;
+}
+
+#underrubrik > p {
+    font-weight: normal;
+    font-size: 2.5vw;
+    padding: 2vw 5vw;
+    border-top: solid 0.5vw black;
+    border-bottom: solid 0.5vw black;
+    justify-self: center;
+    z-index: 2;
+}
+
+#brödtext > p{
+    line-height: 4vw;
+    font-weight: lighter;
+    grid-column: 2;
+}
+
+#brödtext > h3{
+    font-size: 2.5vw;
+    font-weight: normal;
+    padding: 2vw 0;
+}
+
+
+
+
+
+footer {
+    padding-top: 4vw;
+    align-items: center;
+    font-weight: lighter;
 }
