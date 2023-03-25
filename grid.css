@@ -1,26 +1,26 @@
-#bildspel{
+#slideshow{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
 }
 
-#underrubrik{
+#subheader{
     display:grid;
     align-items: center;
     justify-content: center;
 }
 
-#underrubrik > p{
+#subheader > p{
     grid-row: 1;
     grid-column: 1;
 }
 
-#underrubrik > img{    
+#subheader > img{
     grid-row: 1;
     grid-column: 1;
 }
 
-#brödtext{
+#mainContent{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html lang="sv">
+<html lang="sv" xmlns="http://www.w3.org/1999/html">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,52 +26,52 @@
 
         </div>
 
-        <div id="bildspel">
-            <div class="bildspel">
+        <div id="slideshow">
+            <div class="slide">
                 <img src="assets/3d-printing.webp" alt="Bild av 3D skrivare">
             </div>
 
-            <div class="bildspel">
+            <div class="slide">
                 <img src="assets/istockphoto-1339305459-170667a.jpg" alt="Bild av 3D skrivare">
             </div>
 
-            <div class="bildspel">
+            <div class="slide">
                 <img src="assets/l-intro-1624981856.jpg" alt="Bild av 3D skrivare">
             </div>
 
-            <div class="bildspel">
+            <div class="slide">
                 <img src="assets/maxresdefault.jpg" alt="Bild av 3D skrivare">
             </div>
 
-            <div class="bildspel">
+            <div class="slide">
                 <img src="assets/to-3d-print-or-not-to-3d-print-software-identifies-parts-for-am-1555389944.jpg" alt="Bild av 3d printade delar">
             </div>
 
-            <div class="bildspel">
+            <div class="slide">
                 <img src="assets/which-3d-models-cannot-be-3d-printed-.jpg" alt="Bild av 3D skrivare">
             </div>
 
-            <a class="tillbaka" onclick="visaBildPlus(-1)">&#10094;</a>
-            <a class="nasta" onclick="visaBildPlus(1)">&#10095;</a>
+            <a class="back" onclick="visaBildPlus(-1)">&#10094;</a>
+            <a class="next" onclick="visaBildPlus(1)">&#10095;</a>
 
         </div>
 
-        <div class="indpunkter">
-            <span class="punkt" onclick="aktuellBild(1)"></span>
-            <span class="punkt" onclick="aktuellBild(2)"></span>
-            <span class="punkt" onclick="aktuellBild(3)"></span>
-            <span class="punkt" onclick="aktuellBild(4)"></span>
-            <span class="punkt" onclick="aktuellBild(5)"></span>
-            <span class="punkt" onclick="aktuellBild(6)"></span>
+        <div class="indicatorDots">
+            <span class="dot" onclick="aktuellBild(1)"></span>
+            <span class="dot" onclick="aktuellBild(2)"></span>
+            <span class="dot" onclick="aktuellBild(3)"></span>
+            <span class="dot" onclick="aktuellBild(4)"></span>
+            <span class="dot" onclick="aktuellBild(5)"></span>
+            <span class="dot" onclick="aktuellBild(6)"></span>
         </div>
 
-        <div id="underrubrik">
+        <div id="subheader">
             <img src="assets/bakgrundunderrubrik.jpeg" alt="fritidsbåt på havet">
             <p> 3D utskrift av Båtreservdelar både för äldre och nyare fritidsbåtar!
             </p>
         </div>
 
-        <div id="brödtext">
+        <div id="mainContent">
             <img src="" alt="exempelbild av 3d modeller">
             <h3>
                 Effektiv 3D utskriftslösningar för din fritidsbåt
@@ -86,9 +86,12 @@
         </div>
 
         <footer>
-            <p>batdelarinfo@gmail.com</p>
-            <a class="sociLink" href=""><img src="" alt=""></a>
-            <a class="sociLink" href=""><img src="" alt=""></a>
+            <span title="kopiera mailadress" id="mail" onclick="copyMail()">batdelarinfo@gmail.com</span>
+            <span id="tooltipp">Mailadressen har kopierats</span>
+            <div>
+            <a class="sociLink" href=""><img src="assets/facebook-4096-black.png" alt="facebook logo"></a>
+            <a class="sociLink" href=""><img src="assets/instagram.png" alt="instagram logo"></a>
+            </div>
 
         </footer>
 

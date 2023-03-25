@@ -40,12 +40,6 @@ a:hover{
     opacity: 60%;
 }
 
-a:active{
-    background-color: black;
-    color: white;
-    font-weight: bolder;
-}
-
 p a{
     padding: 0 2vw;
     border-bottom-width:0.2vw;
@@ -87,7 +81,8 @@ img.header {
 
 .headerR {
     float: right;
-    padding:var(--025hehi);
+    padding:1.15vw var(--025hehi) 0 var(--025hehi);
+    border-bottom: 0.8vw transparent solid;
 }
 
 p.header + a {
@@ -95,20 +90,17 @@ p.header + a {
 }
 
 #butik{
-    background-color: black;
-    color: white;
+    border-bottom: 0.8vw black solid;
     font-weight: bolder;
 }
 
 #index{
-    background-color: black;
-    color: white;
+    border-bottom: 0.8vw black solid;
     font-weight: bolder;
 }
 
 #om_oss{
-    background-color: black;
-    color: white;
+    border-bottom: 0.8vw black solid;
     font-weight: bolder;
 }
 
@@ -123,19 +115,19 @@ p.header + a {
     opacity: 60%;
 }
 
-#bildspel{
+#slideshow{
     height: 40vw;
     display: flex;
 }
 
-.bildspel{
+.slide{
     transition: opacity 2s;
     position: absolute;
 
 
 }
 
-.bildspel img {
+.slide img {
     height: 35vw;
     display: block;
     width: 50vw;
@@ -144,7 +136,7 @@ p.header + a {
     margin-top: 2vw;
 }
 
-.tillbaka, .nasta{
+.back, .next{
     font-weight: bold;
     font-size: 2vw;
     padding: 2vw;
@@ -154,16 +146,16 @@ p.header + a {
     align-self: center;
 }
 
-.nasta{
+.next{
     right: 0;
     border-radius:1vw 0 0 1vw;
 }
 
-.indpunkter{
+.indicatorDots{
     text-align: center;
 }
 
-.punkt{
+.dot{
     height: 1.2vw;
     width: 1.2vw;
     margin: 0.5vw 0.25vw;
@@ -173,11 +165,11 @@ p.header + a {
     display: inline-block;
 }
 
-.punkt:hover, .active{
+.dot:hover, .active{
     background-color: rgba(69, 69, 69, 0.9);
 }
 
-#underrubrik > img{
+#subheader > img{
     height: 16vw;
     width: 100vw;
     overflow: hidden;
@@ -185,7 +177,7 @@ p.header + a {
     opacity: 70%;
 }
 
-#underrubrik > p {
+#subheader > p {
     font-weight: normal;
     font-size: 2.5vw;
     padding: 2vw 5vw;
@@ -195,16 +187,18 @@ p.header + a {
     z-index: 2;
 }
 
-#brödtext > p{
+#mainContent > p{
     line-height: 4vw;
     font-weight: lighter;
     grid-column: 2;
+    margin-right: 4vw;
 }
 
-#brödtext > h3{
+#mainContent > h3{
     font-size: 2.5vw;
     font-weight: normal;
     padding: 2vw 0;
+    margin-right: 4vw;
 }
 
 
@@ -215,4 +209,73 @@ footer {
     padding-top: 4vw;
     align-items: center;
     font-weight: lighter;
+    margin-bottom: 5vw;
+}
+
+#mail{
+    user-select: none;
+    border: 0.2vw dashed rgba(187, 181, 181, 0.4);
+    border-right-width: 0;
+    border-left-width: 0;
+    padding: 3vw 0;
+    width: 100vw;
+    text-align: center;
+}
+
+#mail:hover{
+    cursor: pointer;
+}
+
+#tooltipp{
+    display: none;
+    z-index: 69;
+    background: rgba(15,19,21,0.61);
+    border-radius: 2vw;
+    padding: 0.5vw;
+}
+
+#mail:active #tooltipp{
+    display: block;
+}
+
+a.sociLink > img{
+    width: 5vw;
+}
+
+footer>div{
+    align-items: center;
+    margin-top: 1vw;
+}
+
+
+
+/*__________________________________________________________________________________________________
+
+/*OM OSS*/
+
+#topimg{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/veneen-osat.jpg");
+    background-size: cover;
+    background-position: bottom;
+    opacity: 90%;
+    justify-content: center;
+    align-items: center;
+    height: 16vw;
+}
+
+h1.oo{
+    color: white;
+    font-size: 5vw;
+    padding: 2vw 10vw 2vw 10vw;
+    border: 0.6vw solid white;
+    border-right-width: 0;
+    border-left-width: 0;
+}
+
+p.oo{
+    padding: 4vw;
+    font-size: smaller;
+    text-align: center;
+    font-weight: lighter;
+    line-height: 4vw;
 }

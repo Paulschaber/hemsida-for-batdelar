@@ -24,8 +24,8 @@ function sleepPromise(time) {
 
 
 function visaBild(n){
-    const bild = document.getElementsByClassName("bildspel")
-    const punkter = document.getElementsByClassName("punkt")
+    const bild = document.getElementsByClassName("slide")
+    const punkter = document.getElementsByClassName("dot")
     if(n > bild.length){
         bildindex = 1
     }
@@ -41,6 +41,12 @@ function visaBild(n){
     bild[bildindex-1].classList.remove("gömd")
     punkter[bildindex-1].classList.add("active")
 
+}
+
+function copyMail(){
+    var text2copy = document.getElementById("mail")
+
+    navigator.clipboard.writeText(text2copy.outerText)
 }
 
 autobyt().then()

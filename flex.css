@@ -13,3 +13,10 @@ footer{
     flex-direction: column;
 }
 
+#topimg{
+    display: flex;
+}
+
+footer>div{
+    display: flex;
+}
