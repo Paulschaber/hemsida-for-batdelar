@@ -44,9 +44,9 @@ function visaBild(n){
 }
 
 function copyMail(){
-    var text2copy = document.getElementById("mail")
+    var text2copy = "batdelarinfo@gmail.com"
 
-    navigator.clipboard.writeText(text2copy.outerText)
+    navigator.clipboard.writeText(text2copy)
 }
 
 autobyt().then()

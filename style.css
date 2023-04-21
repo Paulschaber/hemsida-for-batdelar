@@ -55,6 +55,7 @@ p a{
 #har p{
     margin-top: auto;
     margin-bottom: auto;
+    color: orange;
 }
 
 header {
@@ -187,11 +188,17 @@ p.header + a {
     z-index: 2;
 }
 
+#mainContent > img{
+    width: 45vw;
+    justify-self: center;
+}
+
 #mainContent > p{
     line-height: 4vw;
     font-weight: lighter;
     grid-column: 2;
     margin-right: 4vw;
+    margin-top: 10vw;
 }
 
 #mainContent > h3{

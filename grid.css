@@ -23,4 +23,28 @@
 #mainContent{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+#mainContent > img#bild1{
+    grid-row: 1;
+    grid-column: 1;
+    margin-top: auto;
+}
+
+#mainContent > img#bild2{
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#mainContent > p{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column: 2;
+}
+
+#mainContent > h3{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column: 2;
 }
