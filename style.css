@@ -20,6 +20,8 @@ html{
 }
 
 :root {
+    --mqhehi: 15vw;
+    --075mqhehi: 10vw;
     --headerheigt: 4vw;
     --05hehi: 2vw;
     --025hehi: 1vw;
@@ -103,6 +105,10 @@ p.header + a {
 #om_oss{
     border-bottom: 0.8vw black solid;
     font-weight: bolder;
+}
+
+#burgir{
+    display: none;
 }
 
 #topbckgrnd{
@@ -297,4 +303,39 @@ Kontakt
 iframe  {
     height: 50vw;
     width: 80vw;
+}
+
+
+
+/*______________________________________________________________________________________________________________
+ */
+
+@media only screen and (max-width: 500px){
+
+    *{
+        font-size: 5vw;
+    }
+
+    header{
+        height: var(--mqhehi);
+    }
+
+    img.header{
+        height: var(--mqhehi);
+    }
+
+    a.header, p.header{
+        display: none;
+    }
+
+    #burgir{
+        display: inline;
+        height:var(--075mqhehi);
+        margin-left: auto;
+        margin-right: 3vw;
+    }
+
+    #burgir:hover{
+        cursor: pointer;
+    }
 }

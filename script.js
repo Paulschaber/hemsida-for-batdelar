@@ -49,4 +49,9 @@ function copyMail(){
     navigator.clipboard.writeText(text2copy)
 }
 
+function dropdown(){
+
+}
+
 autobyt().then()
+
